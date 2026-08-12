@@ -5,3 +5,8 @@ const filterEvenNumbers: number[] = numbers.filter((num) => num % 2 === 0);
 console.log(filterEvenNumbers);
 
 // problem 02
+function reverseString(str: string): string {
+  return str.split("").reverse().join("");
+}
+
+console.log(reverseString("typescript"));

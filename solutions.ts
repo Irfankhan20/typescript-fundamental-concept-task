@@ -9,4 +9,4 @@ function reverseString(str: string): string {
   return str.split("").reverse().join("");
 }
 
-console.log(reverseString("typescript"));
+console.log(reverseString("irfankhan"));

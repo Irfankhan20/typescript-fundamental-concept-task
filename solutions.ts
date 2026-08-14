@@ -55,3 +55,29 @@ const myBook = {
   author: "Jane Doe",
   publishedYear: 2024,
 };
+
+// problem 06
+
+class Person {
+  constructor(
+    public name: string,
+    public age: number,
+  ) {}
+}
+
+class Student extends Person {
+  constructor(
+    name: string,
+    age: number,
+    public grade: string,
+  ) {
+    super(name, age);
+  }
+
+  getDetails(): string {
+    return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+  }
+}
+
+const student = new Student("Irfan", 26, "A");
+console.log(student.getDetails());

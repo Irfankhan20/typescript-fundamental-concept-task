@@ -58,26 +58,34 @@ const myBook = {
 
 // problem 06
 
-class Person {
-  constructor(
-    public name: string,
-    public age: number,
-  ) {}
-}
+// class Person {
+//   constructor(
+//     public name: string,
+//     public age: number,
+//   ) {}
+// }
 
-class Student extends Person {
-  constructor(
-    name: string,
-    age: number,
-    public grade: string,
-  ) {
-    super(name, age);
-  }
+// class Student extends Person {
+//   constructor(
+//     name: string,
+//     age: number,
+//     public grade: string,
+//   ) {
+//     super(name, age);
+//   }
 
-  getDetails(): string {
-    return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
-  }
-}
+//   getDetails(): string {
+//     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
+//   }
+// }
 
-const student = new Student("Irfan", 26, "A");
-console.log(student.getDetails());
+// const student = new Student("Irfan", 26, "A");
+// console.log(student.getDetails());
+
+// problem 07
+
+const getIntersection = (num1: number[], num2: number[]): number[] => {
+  return num1.filter((num) => num2.includes(num));
+};
+
+console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]));
